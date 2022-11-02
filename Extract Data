@@ -1,0 +1,12 @@
+data = Medicine.objects.all()
+med = {
+    "medicine_number": data
+}
+return render_to_response("login/profile.html", med)
+// in html file :
+{% for student in student_number %}
+    {{ medicine.number}}
+    {{ medicine.name}}
+    {% endfor %}
+
+
